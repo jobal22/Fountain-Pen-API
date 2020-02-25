@@ -31,7 +31,7 @@
             </div>
         </nav>
         <main role="main" class="siteContent">
-            <header>
+            <header class="infoContent">
                 <h2>Fountain Pen Information</h2>
                 <p>Information on what a fountain pen is...</p>
                 <div class="penOptions">
@@ -45,22 +45,23 @@
                         <li><a class="penBrand" href="">Insert Pen Brand</a></li>
                     </ul>
                 </div>
+                <form id="js-form">
+                    <input type="text" name="search-term" id="js-search-term" placeholder="Pelikan" required>
+                    <button type="submit">Search</button>
+                </form>
             </header>
 
-            <form id="js-form">
-                <input type="text" name="search-term" id="js-search-term" placeholder="Pelikan" required>
-                <button type="submit">Search</button>
-            </form>
+            
 
-            <section class="googleResults hidden" id="js-googleResults">
+            <section class="googleResults hidden display" id="js-googleResults">
                 <h3>Google Results</h3>
             </section>
 
-            <section class="ebayResults hidden" id="js-ebayResults">
+            <section class="ebayResults hidden display" id="js-ebayResults">
                 <h3>Ebay Results</h3>
             </section>
 
-            <section class="youtubeResults hidden" id="js-youtubeResults">
+            <section class="youtubeResults hidden display" id="js-youtubeResults">
                 <h3>Youtube Results</h3>
             </section>
 

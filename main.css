@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+}
+
+.infoContent {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.display {
+    border: 1px solid black;
+    padding: 20px;
+}
+
