@@ -46,23 +46,26 @@
                     </ul>
                 </div>
                 <form id="js-form">
-                    <input type="text" name="search-term" id="js-search-term" placeholder="Pelikan" required>
+                    <input type="text" name="search-term" id="js-search-term" placeholder="Pelikan" required> review
                     <button type="submit">Search</button>
                 </form>
             </header>
 
             
+            <p id="js-error-message" class="error-message"></p>
 
-            <section class="googleResults hidden display" id="js-googleResults">
+            <section class="googleResults display" id="js-googleResults">
                 <h3>Google Results</h3>
             </section>
 
-            <section class="ebayResults hidden display" id="js-ebayResults">
+            <section class="ebayResults display" id="js-ebayResults">
                 <h3>Ebay Results</h3>
             </section>
 
-            <section class="youtubeResults hidden display" id="js-youtubeResults">
+            <section class="youtubeResults display" id="js-youtubeResults">
                 <h3>Youtube Results</h3>
+                <ul id="youtubeResults-list" class="list">
+                </ul>
             </section>
 
             
@@ -71,7 +74,7 @@
     <footer>
 
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>
