@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fountain Pen API</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	 crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <nav role="navigation" class="navbar">
+            <div class="nav-container">
+                <div class="title">
+                    <h1>Fountain Pen Search</h1>
+                </div>
+                <div class="topnav">
+                    <div class="hamburger">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">Menu</a>
+                    </div>
+                    <div class="menu" id="myLinks">
+                        <ul>
+                            <li><a class="jumper" href="#js-mainSearch">Search</a></li>
+                            <li><a class="jumper" href="#js-googleResults">Google Results</a></li>
+                            <li><a class="jumper" href="#js-ebayResults">Ebay Results</a></li>
+                            <li><a class="jumper" href="#js-youtubeResults">Youtube Results</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main role="main" class="siteContent">
+            <header>
+                <h2>Fountain Pen Information</h2>
+                <p>Information on what a fountain pen is...</p>
+                <div class="penOptions">
+                    <ul>
+                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
+                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
+                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
+                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
+                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
+                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
+                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <form id="js-form">
+                <input type="text" name="search-term" id="js-search-term" placeholder="Pelikan" required>
+                <button type="submit">Search</button>
+            </form>
+
+            <section class="googleResults hidden" id="js-googleResults">
+                <h3>Google Results</h3>
+            </section>
+
+            <section class="ebayResults hidden" id="js-ebayResults">
+                <h3>Ebay Results</h3>
+            </section>
+
+            <section class="youtubeResults hidden" id="js-youtubeResults">
+                <h3>Youtube Results</h3>
+            </section>
+
+            
+        </main>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
