@@ -1,7 +1,7 @@
 'use strict';
 
 const etsyApiKey = 'zlz871aunsfnzwupy482id1z';
-const searchEtsyURL = 'https://openapi.etsy.com/v2/listings/active';
+const searchEtsyURL = 'https://openapi.etsy.com/v2/users/etsystore/listings/active.js';
 
 const googleApiKey = 'AIzaSyAop8x0uttiuQ-azRPZbR1K07SdFRFZnyg';
 const searchGoogleURL = 'https://www.googleapis.com/customsearch/v1';
@@ -10,38 +10,15 @@ const youtubeApiKey = 'AIzaSyBmKz0IYHWnKb5ztZXPEIYHGLlzxQ9ff-0';
 const searchYoutubeURL = 'https://www.googleapis.com/youtube/v3/search';
         
 
+
+//youtube works!!
 function formatQueryParams(params) {
     const queryItems = Object.keys(params)
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)
     return queryItems.join('&');
 }
 
-function getEtsyPens(query, maxResults) {
-    const params = {
-        key: etsyApiKey,
-        title: query,
-    };
-    const queryString = formatQueryParams(params)
-    const url = searchEtsyURL + '?' + queryString;
-
-    console.log(url);
-
-    fetch(url)
-    .then(response => {
-      if(response.ok) {
-        return response.json();
-      }
-      throw new Error(response.statusText);
-    })
-    .then(responseJson => displayResults(responseJson))
-      .catch(err => {
-        $('#js-error-message').text(`Something went wrong: ${err.message}`);
-      })
-}
-
-//youtube works!!
-
-/*function displayResults(responseJson) {
+function displayResults(responseJson) {
     console.log(responseJson);
     $('#youtubeResults-list').empty();
     for (let i = 0; i < responseJson.items.length; i++){
@@ -79,20 +56,19 @@ function getYoutubePens(query, maxResults) {
       .catch(err => {
         $('#js-error-message').text(`Something went wrong: ${err.message}`);
       })
-}*/
+}
 
 function watchForm () {
     $('form').submit(event => {
         event.preventDefault();
         const searchTerm = $('#js-search-term').val();
         const maxResults = 4;
-        getEtsyPens(searchTerm, maxResults);
-        //getYoutubePens(searchTerm, maxResults);
-        // didnt work!!! getGooglePens(searchTerm, maxResults);
+        getYoutubePens(searchTerm, maxResults);
     });
 }
 
 $(watchForm);
+
 
 //the google stuff did not work
 /*unction getGooglePens(query, maxResults) {
@@ -117,4 +93,63 @@ $(watchForm);
       .catch(err => {
         $('#js-error-message').text(`Something went wrong: ${err.message}`);
       })
+}
+
+Etsy did not work!!!
+function getEtsyPens(query, maxResults) {
+    const params = {
+        title: query,
+        key: etsyApiKey,
+    };
+    const queryString = formatQueryParams(params)
+    const url = searchEtsyURL + '?' + queryString;
+
+    console.log(url);
+
+fetch(url)
+    .then(response => {
+      if(response.ok) {
+        return response.json();
+      }
+      throw new Error(response.statusText);
+    })
+    .then(responseJson => displayResults(responseJson))
+      .catch(err => {
+        $('#js-error-message').text(`Something went wrong: ${err.message}`);
+      })
 }*/
+
+
+//function callAPI(inputVal) {
+    //fetch('https://openapi.etsy.com/v2/users/etsystore/listings/active?api_key=zlz871aunsfnzwupy482id1z&state:${inputVal}') 
+    /*.then(response => response.json)
+    .then(newResponse => displayResults(newREsponse))
+    .catch(error => console.log(error))*/
+    //.then(response => {
+        /*if(response.ok) {
+          return response.json();
+        }
+        throw new Error(response.statusText);
+      })
+      .then(responseJson => displayResults(responseJson))
+        .catch(err => {
+          $('#js-error-message').text(`Something went wrong: ${err.message}`);
+        })*/
+        //console.log(response);
+//})
+//}
+
+/*function submitButton() {
+    $('form').submit(event => {
+        event.preventDefault();
+        let inputVal = $('#js-search-term').val();
+        console.log(inputVal);
+        callAPI(inputVal);
+    })
+}
+
+function displayResults() {
+    alert('we made it here!')
+}
+
+submitButton();*/
