@@ -3,18 +3,107 @@
 }
 
 body {
-    margin: 30px;
+    margin: 30px; 
+}
+
+nav {
+    padding: 1% 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.title {
+    font-size: 15px;
+    /*position: absolute;
+    left: 50%;
+    transform: translate(-50%);*/
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.icon {
+    text-align: right;
+    padding-right: 1px;
+    color: black;
+    width: 100%;
+    font-size: 20px;
+    /*float: right;
+    display: block;}*/
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+main {
+    margin-top: 60px; /*temp may change*/
+}
+
+.container {
+    background: white;
+    /*width: 100%;*/
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-p {
+    font-size: 18px;
 }
 
 .infoContent {
-    border: 2px solid black;
     padding: 20px;
+    text-align: center;
+}
+
+.brand1, .brand2, .shop {
+    list-style: none;
+}
+
+.penOptions ul li {
+    display: inline-block;
+}
+
+.penOptions ul a {
+    color: black;
+    font-size: 17px;
+}
+
+.penBrand, .penBrand1 {
+    padding-left: 10px;
+}
+
+.penShop {
+    padding-left: px
+}
+
+#js-search-term {
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+}
+
+button {
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 80px;
 }
 
 .display {
     border: 1px solid black;
     padding: 20px;
     width: 400px;
+}
+
+.display h3 {
+    text-align: center;
 }
 
 .error-message {
@@ -25,7 +114,82 @@ body {
     display: none;
 }
 
+@media screen and (max-width: 1029px) {
+
+
+    .topnav ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin:0;
+        padding: 10px; /*this took the bullets off*/
+      }
+
+      .topnav a {
+        margin: 0 20px; 
+        text-decoration: none;
+        color: black;
+        letter-spacing: 4px;
+      }
+
+      .icon {
+        /*text-align: right;
+        padding-right: 13px;
+        color: white;
+        width: 100%;
+        font-size: 40px;*/
+        float: right;
+        display: block;
+        }
+
+      .menu {display: none;}
+}
+
 @media screen and (min-width: 1030px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .title {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .nav-container {
+      display: flex;
+    }
+
+    .icon {display: none;}
+
+    .topnav {
+        max-width: 1170px;
+        margin: auto;
+        position: relative;
+      }    
+
+      .topnav ul{
+        text-align: center;
+        margin:0;
+        padding: 65px; /*this took the bullets off*/
+      }
+    
+      .topnav ul li {
+        float:none;
+        display: inline-block; 
+        list-style: none;
+      }
+
+      .topnav ul  a {
+        margin: 0 20px; 
+        text-decoration: none;
+        color: black;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
     .display {
         display: inline-block;
     }

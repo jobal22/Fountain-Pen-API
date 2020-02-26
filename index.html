@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
      crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
      
      <!--This is Etsy's prefered way to get across CORS issues in js-->
      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js "></script>
@@ -62,11 +63,11 @@
         <nav role="navigation" class="navbar">
             <div class="nav-container">
                 <div class="title">
-                    <h1>Fountain Pen Search</h1>
+                    <h1>Fountain Pen Information</h1>
                 </div>
                 <div class="topnav">
                     <div class="hamburger">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">Menu</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#61</a>
                     </div>
                     <div class="menu" id="myLinks">
                         <ul>
@@ -81,17 +82,23 @@
         </nav>
         <main role="main" class="siteContent">
             <header class="infoContent">
-                <h2>Fountain Pen Information</h2>
-                <p>Information on what a fountain pen is...</p>
+                <p class="header-p">Whether you are an enthusiast or new to fountain pens, this API provides a list of popular 
+                    fountain pen brands, as well as, popular pen shops. Each brand and shop link will take you 
+                    to the brand’s website. The search bar is design for you to enter a brand and/or specific 
+                    brand and model. The results of this search will display Etsy images that will allow you 
+                    to see your pen’s availability on Etsy. The results also displays links to the YouTube 
+                    reviews for your pen. </p>
                 <div class="penOptions">
-                    <ul class="brand">
+                    <ul class="brand1">
                         <li><a class="penBrand" href="https://www.pelikan.com/pulse/Pulsar/en_US_INTL.Core.displayFilter.252412./fountain-pens">Pelikan</a></li>
                         <li><a class="penBrand" href="https://www.sailorpen.com/">Sailor</a></li>
                         <li><a class="penBrand" href="https://conklinpens.com/">Conklin</a></li>
-                        <li><a class="penBrand" href="https://www.montblanc.com/en-us/landingpages/fountain-pens.html">Montblanc</a></li>
-                        <li><a class="penBrand" href="http://pilotpen.us/categories/fountain-pens/">Pilot</a></li>
-                        <li><a class="penBrand" href="https://www.lamy.com/en/fountain-pens/">Lamy</a></li>
-                        <li><a class="penBrand" href="https://www.platinum-pen.co.jp/english.html">Platinum</a></li>
+                    </ul>
+                    <ul class="brand2">
+                        <li><a class="penBrand1" href="https://www.montblanc.com/en-us/landingpages/fountain-pens.html">Montblanc</a></li>
+                        <li><a class="penBrand1" href="http://pilotpen.us/categories/fountain-pens/">Pilot</a></li>
+                        <li><a class="penBrand1" href="https://www.lamy.com/en/fountain-pens/">Lamy</a></li>
+                        <li><a class="penBrand1" href="https://www.platinum-pen.co.jp/english.html">Platinum</a></li>
                     </ul>
                     <ul class="shop">
                         <li><a class="penShop" href="https://www.penchalet.com/fine_pens/fountain_pens/">Pen Chalet</a></li>
