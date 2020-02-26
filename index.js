@@ -3,8 +3,8 @@
 const etsyApiKey = 'zlz871aunsfnzwupy482id1z';
 const searchEtsyURL = 'https://openapi.etsy.com/v2/users/etsystore/listings/active.js';
 
-const googleApiKey = 'AIzaSyAop8x0uttiuQ-azRPZbR1K07SdFRFZnyg';
-const searchGoogleURL = 'https://www.googleapis.com/customsearch/v1';
+//const googleApiKey = 'AIzaSyAop8x0uttiuQ-azRPZbR1K07SdFRFZnyg';
+//const searchGoogleURL = 'https://www.googleapis.com/customsearch/v1';
 
 const youtubeApiKey = 'AIzaSyBmKz0IYHWnKb5ztZXPEIYHGLlzxQ9ff-0';
 const searchYoutubeURL = 'https://www.googleapis.com/youtube/v3/search';
@@ -120,13 +120,13 @@ fetch(url)
 }*/
 
 
-//function callAPI(inputVal) {
-    //fetch('https://openapi.etsy.com/v2/users/etsystore/listings/active?api_key=zlz871aunsfnzwupy482id1z&state:${inputVal}') 
-    /*.then(response => response.json)
+/*function callAPI(inputVal) {
+    fetch('https://openapi.etsy.com/v2/users/etsystore/listings/active?api_key=zlz871aunsfnzwupy482id1z&state:${inputVal}') 
+    .then(response => response.json)
     .then(newResponse => displayResults(newREsponse))
-    .catch(error => console.log(error))*/
-    //.then(response => {
-        /*if(response.ok) {
+    .catch(error => console.log(error))
+    then(response => {
+        if(response.ok) {
           return response.json();
         }
         throw new Error(response.statusText);
@@ -134,12 +134,12 @@ fetch(url)
       .then(responseJson => displayResults(responseJson))
         .catch(err => {
           $('#js-error-message').text(`Something went wrong: ${err.message}`);
-        })*/
-        //console.log(response);
-//})
-//}
+        })
+        console.log(response);
 
-/*function submitButton() {
+}
+
+function submitButton() {
     $('form').submit(event => {
         event.preventDefault();
         let inputVal = $('#js-search-term').val();

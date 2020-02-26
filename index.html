@@ -6,8 +6,57 @@
     <title>Fountain Pen API</title>
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-	 crossorigin="anonymous">
+     crossorigin="anonymous">
+     
+     <!--This is Etsy's prefered way to get across CORS issues in js-->
+     <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+     <script type="text/javascript">
+     (function($){
+     
+         $(document).ready(function(){
+             $('#js-form').bind('submit', function() {
+                 api_key = "zlz871aunsfnzwupy482id1z";
+                 terms = $('#js-search-term').val()+"%fountain"+"%pen";
+                 etsyURL = "https://openapi.etsy.com/v2/listings/active.js?callback=getData&keywords="+
+                     terms+"&limit=5&includes=Images:1&api_key="+api_key;
+     
+                 $('#etsy-images').empty();
+                 $('<p></p>').text('Searching for '+terms).appendTo('#etsy-images');
+     
+                 $.ajax({
+                     url: etsyURL,
+                     dataType: 'jsonp',
+                     success: function(data) {
+                         if (data.ok) {
+                             $('#etsy-images').empty();
+                             if (data.count > 0) {
+                                 $.each(data.results, function(i,item) {
+                                     $("<img/>").attr("src", item.Images[0].url_170x135).appendTo("#etsy-images").wrap(
+                                         "<a href='" + item.url + "'></a>"
+                                     );
+                                     if (i%1 == 0) { 
+                                         $('<br/>').appendTo('#etsy-images');
+                                     }
+                                 });
+                             } else {
+                                 $('<p>No results.</p>').appendTo('#etsy-images');
+                             }
+                         } else {
+                             $('#etsy-images').empty();
+                             alert(data.error);
+                         }
+                     }
+                 });
+     
+                 return false;
+             })
+         });
+     
+     })(jQuery);
+    </script>
+
 </head>
+
 <body>
     <div class="container">
         <nav role="navigation" class="navbar">
@@ -22,7 +71,7 @@
                     <div class="menu" id="myLinks">
                         <ul>
                             <li><a class="jumper" href="#js-mainSearch">Search</a></li>
-                            <li><a class="jumper" href="#js-googleResults">Google Results</a></li>
+                            <!--<li><a class="jumper" href="#js-googleResults">Google Results</a></li>-->
                             <li><a class="jumper" href="#js-etsyResults">Etsy Results</a></li>
                             <li><a class="jumper" href="#js-youtubeResults">Youtube Results</a></li>
                         </ul>
@@ -36,13 +85,13 @@
                 <p>Information on what a fountain pen is...</p>
                 <div class="penOptions">
                     <ul>
-                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
-                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
-                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
-                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
-                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
-                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
-                        <li><a class="penBrand" href="">Insert Pen Brand</a></li>
+                        <li><a class="penBrand" href="https://www.pelikan.com/pulse/Pulsar/en_US_INTL.Core.displayFilter.252412./fountain-pens">Pelikan</a></li>
+                        <li><a class="penBrand" href="https://www.sailorpen.com/">Sailor</a></li>
+                        <li><a class="penBrand" href="https://conklinpens.com/">Conklin</a></li>
+                        <li><a class="penBrand" href="https://www.montblanc.com/en-us/landingpages/fountain-pens.html">Montblanc</a></li>
+                        <li><a class="penBrand" href="http://pilotpen.us/categories/fountain-pens/">Pilot</a></li>
+                        <li><a class="penBrand" href="https://www.lamy.com/en/fountain-pens/">Lamy</a></li>
+                        <li><a class="penBrand" href="https://www.platinum-pen.co.jp/english.html">Platinum</a></li>
                     </ul>
                 </div>
                 <form id="js-form">
@@ -53,13 +102,14 @@
 
             <p id="js-error-message" class="error-message"></p>
 
-            <section class="googleResults display" id="js-googleResults">
+            <section class="googleResults display hidden" id="js-googleResults">
                 <h3>Google Results</h3>
                 
             </section>
 
             <section class="etsyResults display" id="js-etsyResults">
                 <h3>Etsy Results</h3>
+                <div id="etsy-images"></div>
             </section>
 
             <section class="youtubeResults display" id="js-youtubeResults">
@@ -67,6 +117,7 @@
                 <ul id="youtubeResults-list" class="list">
                 </ul>
             </section>
+
             
         </main>
     </div>
