@@ -55,6 +55,7 @@ main {
     margin-right: auto;
 }
 
+
 .header-p {
     font-size: 18px;
     width: 300px;
@@ -70,8 +71,11 @@ main {
     text-align: center;
 }*/
 
+
+
 .brand1, .brand2, .shop {
     list-style: none;
+    
 }
 
 .penOptions ul li {
@@ -90,6 +94,10 @@ main {
 .penShop {
     padding-left: 13px;
     /*stretch out this!!!!*/
+}
+
+#js-form {
+text-align: center;
 }
 
 #js-search-term {
@@ -199,7 +207,6 @@ button {
     }
 
 
-
 }
 
 @media screen and (min-width: 1030px) {
@@ -263,7 +270,7 @@ button {
       /*The .box centered*/
       .box {
           display: flex;
-          justify-content: space-evenly;
+          justify-content: space-around;
       }
 
       .display{
