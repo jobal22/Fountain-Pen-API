@@ -29,12 +29,25 @@
                      dataType: 'jsonp',
                      success: function(data) {
                          if (data.ok) {
+                            //  console.log(data.results);
+                            //  var resultsArray = data.results;
+                            //  resultsArray.forEach(function(result){
+                            //      console.log(result.title);
+                            //  })
+
                              $('#etsy-images').empty();
                              if (data.count > 0) {
                                  $.each(data.results, function(i,item) {
-                                     $("<img/>").attr("src", item.Images[0].url_170x135).appendTo("#etsy-images").wrap(
+                                    $("<h4></h4>").text(item.title).appendTo("#etsy-images");
+
+                                    $("<img/>").attr("src", item.Images[0].url_170x135).appendTo("#etsy-images").wrap(
                                          "<a href='" + item.url + "'></a>"
                                      );
+
+
+                                    $("<p></p>").text('$' + item.price).appendTo("#etsy-images");
+
+                                     
                                      if (i%1 == 0) { 
                                          $('<br/>').appendTo('#etsy-images');
                                      }
@@ -80,6 +93,7 @@
                 </div>
             </div>
         </nav>
+        
         <main role="main" class="siteContent">
             <header class="infoContent">
                 <p class="header-p">Whether you are an enthusiast or new to fountain pens, this API provides a list of popular 
@@ -118,25 +132,27 @@
                 <h3>Google Results</h3>
                 
             </section>-->
-
-            <section class="etsyResults display" id="js-etsyResults">
-                <h3>Etsy Results</h3>
-                <div id="etsy-images"></div>
-            </section>
-
-            <section class="youtubeResults display" id="js-youtubeResults">
-                <h3>Youtube Results</h3>
-                <ul id="youtubeResults-list" class="list">
-                </ul>
-            </section>
+            <div class="box">
+                <section class="etsyResults display" id="js-etsyResults">
+                    <h3>Etsy Results</h3>
+                    <div id="etsy-images"></div>
+                </section>
+                <section class="youtubeResults display" id="js-youtubeResults">
+                    <h3>Youtube Results</h3>
+                    <ul id="youtubeResults-list" class="list">
+                    </ul>
+                </section>
+            </div>
 
             
         </main>
+        
     </div>
     <footer>
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="index.js"></script>
 </body>
 </html>

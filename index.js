@@ -6,11 +6,32 @@ const searchEtsyURL = 'https://openapi.etsy.com/v2/users/etsystore/listings/acti
 //const googleApiKey = 'AIzaSyAop8x0uttiuQ-azRPZbR1K07SdFRFZnyg';
 //const searchGoogleURL = 'https://www.googleapis.com/customsearch/v1';
 
+//oldYTAPIK:
+// AIzaSyCTbjjOtYZ_tmClYaB4BENYdwPELK1LXzc
+
 const youtubeApiKey = 'AIzaSyBmKz0IYHWnKb5ztZXPEIYHGLlzxQ9ff-0';
 const searchYoutubeURL = 'https://www.googleapis.com/youtube/v3/search';
         
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
 
+  $(".jumper").on("click", function( e ) {
+    
+    e.preventDefault();
 
+    $("body, html").animate({ 
+        scrollTop: $( $(this).attr('href') ).offset().top - 122
+    }, 600);
+    
+});
+
+//no longer working
 //youtube works!!
 function formatQueryParams(params) {
     const queryItems = Object.keys(params)
@@ -68,6 +89,7 @@ function watchForm () {
 }
 
 $(watchForm);
+
 
 
 //the google stuff did not work
