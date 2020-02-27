@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     margin: 30px; 
-}
+} */
+
 
 nav {
     padding: 1% 0;
@@ -45,8 +46,8 @@ main {
     margin-top: 60px; /*temp may change*/
 }
 
-.container {
-    background: white;
+.header {
+    /* background: white; */
     /*width: 100%;*/
     margin-top: 50px;
     margin-bottom: 20px;
@@ -55,6 +56,20 @@ main {
     margin-right: auto;
 }
 
+
+.bgControl {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0)
+       ),url("https://github.com/jobal22/Fountain-Pen-API/blob/master/img/letters-2111533.jpg?raw=true");
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
 
 .header-p {
     font-size: 18px;
@@ -78,13 +93,17 @@ main {
     
 }
 
+/* .penOptions {
+    color: white;
+} */
+
 .penOptions ul li {
     display: inline-block;
 }
 
 .penOptions ul a {
-    color: black;
-    font-size: 17px;
+    color: #0e2c3b;
+    font-size: 30px;
 }
 
 .penBrand, .penBrand1 {
@@ -119,6 +138,7 @@ button {
     border: 1px solid black;
     padding: 20px;
     width: 400px;
+    background-color: white;
 }
 
 .display h3 {
