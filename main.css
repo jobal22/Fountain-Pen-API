@@ -74,11 +74,13 @@ body {
 }
 
 .lbgControl {
-    background-image: url("https://github.com/jobal22/Fountain-Pen-API/blob/master/img/bottom%20background.png?raw=true");
-    /* background-attachment: fixed; */
-    background-size: 2000px;
-    background-repeat: repeat;
-    background-attachment: scroll;
+    background-image: url("https://github.com/jobal22/Fountain-Pen-API/blob/master/img/sea-2927115_1920%20(1).jpeg?raw=true");
+    background-attachment: fixed;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+
 }
 
 /* .header-p {
