@@ -80,9 +80,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right bottom;
-
-        padding-bottom: 40%;
-        padding-top: 80px;
+    padding-bottom: 200px;
+    padding-top: 80px;
 
 
 }
@@ -255,6 +254,18 @@ button:hover{
     padding-right: 8%;
 }
 
+.display .etsy-logo {
+    width: 100px;
+   position: relative;
+   left: 35%;
+}
+
+.display .youtube-logo {
+    width: 120px;
+   position: relative;
+   left: 35%;
+}
+
 .error-message {
     color: red;
 }
@@ -409,7 +420,7 @@ button:hover{
       /*The .box centered*/
       .box {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-evenly;
       }
 
       /* .display{
