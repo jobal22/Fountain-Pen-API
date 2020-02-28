@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -7,7 +9,7 @@ body {
 }
 
 
-nav {
+/* nav {
     padding: 1% 0;
     position: fixed;
     top: 0;
@@ -15,20 +17,20 @@ nav {
     right: 0;
     z-index: 10;
     background-color: lavender;
-}
+} */
 
 
 
-.title {
-    font-size: 15px;
+/* .title {
+    font-size: 15px; */
     /*position: absolute;
     left: 50%;
     transform: translate(-50%);*/
-    text-transform: uppercase;
+    /* text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
-    padding-top: 10px;
-}
+    padding-top: 10px; */
+/* }
 
 .icon {
     text-align: right;
@@ -38,23 +40,22 @@ nav {
     font-size: 20px;
     /*float: right;
     display: block;}*/
-    text-decoration: none;
-    padding-top: 20px;
-}
+    /* text-decoration: none;
+    padding-top: 20px; */
 
-main {
+/* main {
     margin-top: 60px; /*temp may change*/
-}
+/* } */ 
 
-.header {
+/* .header { */
     /* background: white; */
     /*width: 100%;*/
-    margin-top: 50px;
+    /* margin-top: 50px;
     margin-bottom: 20px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 
 .bgControl {
@@ -66,7 +67,8 @@ main {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
+    background-position: right top;
     padding-top: 180px;
     padding-bottom: 180px;
 }
@@ -79,14 +81,14 @@ main {
     background-attachment: scroll;
 }
 
-.header-p {
+/* .header-p {
     font-size: 18px;
     width: 300px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
-}
+} */
 
 /*.infoContent {*/
     /*padding: 20px;*/
@@ -96,16 +98,16 @@ main {
 
 
 
-.brand1, .brand2, .shop {
+/* .brand1, .brand2, .shop {
     list-style: none;
     
-}
+} */
 
 /* .penOptions {
     color: white;
 } */
 
-.penOptions ul li {
+/* .penOptions ul li {
     display: inline-block;
 }
 
@@ -121,27 +123,92 @@ main {
 }
 
 .penShop {
-    padding-left: 13px;
+    padding-left: 13px; */
     /*stretch out this!!!!*/
-    text-decoration: none;
-}
+    /* text-decoration: none;
+} */
+
 
 #js-form {
-text-align: center;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 100px;
+    display: inline-block;
+    width: 70%; /*centered*/
+    /* display: flex; 
+    justify-content: center; */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* transform: translate(13%); */
 }
 
 #js-search-term {
-    padding: 4px;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 0;
     border-radius: 4px;
-    font-size: 14px;
-    width: 200px;
+    font-size: 34px;
+    /* width: 190px; */
 }
+
+
+input[type=text] {
+    background-color:  rgba(255, 255, 255, 0);
+    border-top: rgba(255, 255, 255, 0);
+    border-left: rgba(255, 255, 255, 0);
+    border-right: rgba(255, 255, 255, 0);
+  }
+
+  input[type=text], textarea {
+      color: white;
+      text-shadow: 1px 1px 8px rgb(5, 5, 5);
+      text-transform: uppercase;
+  }
+
+  input:focus {
+    outline:none;
+}
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+    font-weight: bold;
+    font-family: 'Cinzel', 'Caveat', 'Libre Baskerville','Raleway' ;
+    text-shadow: 1px 1px 8px rgb(5, 5, 5);
+    border: white;
+    font-size: 20px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Cinzel', 'Caveat', 'Libre Baskerville','Raleway' ;
+    text-shadow: 1px 1px 8px rgb(5, 5, 5);
+    border: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Cinzel', 'Caveat', 'Libre Baskerville','Raleway' ;
+    text-shadow: 1px 1px 8px rgb(5, 5, 5);
+    border: white;
+  }
 
 button {
     padding: 4px;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 44px;
+    text-shadow: 1px 1px 8px rgb(5, 5, 5);
+    text-transform: uppercase;
+    font-family: 'Cinzel', 'Caveat', 'Libre Baskerville','Raleway' ;
+    letter-spacing: 10px;
     width: 80px;
+    background: rgba(255, 255, 255, 0); 
+    border: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+
     
     /* LOOK AT THIS */
     /* border: 3px solid ghostwhite;
@@ -158,12 +225,21 @@ button {
     border-radius: 0; */
 }
 
+button:focus {
+    outline:none;
+}
+
+button:hover{
+    color: rgb(202, 202, 202);
+}
+
 
 .display {
     border: 1px solid black;
     padding: 20px;
     width: 400px;
     background-color: white;
+    width: 400px;
 }
 
 .display h3 {
@@ -203,19 +279,19 @@ button {
         margin: 0 auto;
     }
 
-    .hamburger {
+    /* .hamburger {
         position: fixed;
         left: 96%;
     }
 
-    .topnav ul{
+    .topnav ul{ */
         /* display: flex; */
-        text-align: center;
+        /* text-align: center;
         list-style: none;
         margin:0;
-        padding-bottom: 5px;
+        padding-bottom: 5px; */
         /* padding: 10px; */
-      }
+      /* }
 
       .topnav ul li {
         float:none;
@@ -231,25 +307,30 @@ button {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 10px;
-      }
+      } */
 
-      .icon {
+      /* .icon { */
         /*text-align: right;
         padding-right: 13px;
         color: white;
         width: 100%;
         font-size: 40px;*/
-        float: right;
+        /* float: right;
         display: block;
-        }
+        } */
 
-      .menu {display: none;}
+      /* .menu {display: none;} */
 
-      .infoContent {
+      /* .infoContent { */
         /*padding: 20px;*/
-        padding-top: 40px;
+        /* padding-top: 40px;
         text-align: center;
+    } */
+
+    #js-search-term {
+        width: 190px;
     }
+    
 
 
 }
@@ -312,14 +393,20 @@ button {
         font-size: 20px;
       }
 
+      #js-search-term {
+        width: 390px;
+    }
+
+
       /*The .box centered*/
       .box {
           display: flex;
           justify-content: space-around;
       }
 
-      .display{
-        display: inline-block;
+      /* .display{
+        display: inline-block; */
+        /* width: 600px; */
       }
 
 }
