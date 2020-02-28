@@ -58,11 +58,11 @@ main {
 
 
 .bgControl {
-    background-image: linear-gradient(
+    background-image: /*linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0.4),
         rgba(255, 255, 255, 0)
-       ),url("https://github.com/jobal22/Fountain-Pen-API/blob/master/img/letters-2111533_1280%20(1).jpg?raw=true");
+       ),*/url("https://raw.githubusercontent.com/jobal22/Fountain-Pen-API/master/img/fountain-pen-1854169.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,16 +112,18 @@ main {
 .penOptions ul a {
     color: black;
     font-size: 30px;
-    font-weight: 700;;
+    font-weight: 700;
 }
 
 .penBrand, .penBrand1 {
     padding-left: 10px;
+    text-decoration: none;
 }
 
 .penShop {
     padding-left: 13px;
     /*stretch out this!!!!*/
+    text-decoration: none;
 }
 
 #js-form {
@@ -140,6 +142,20 @@ button {
     border-radius: 4px;
     font-size: 14px;
     width: 80px;
+    
+    /* LOOK AT THIS */
+    /* border: 3px solid ghostwhite;
+    padding: 8px 13px;
+    color: ghostwhite;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.25);
+    transition: color 0.25s linear;
+    text-shadow: 0 0 3px #555555;
+    position: relative;
+    left: -3px;
+    border-radius: 0; */
 }
 
 
