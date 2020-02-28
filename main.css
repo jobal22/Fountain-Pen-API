@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 
-/* body {
-    margin: 30px; 
-} */
+body {
+    margin: 0; 
+}
 
 
 nav {
@@ -62,8 +62,8 @@ main {
         to bottom,
         rgba(255, 255, 255, 0.4),
         rgba(255, 255, 255, 0)
-       ),url("https://github.com/jobal22/Fountain-Pen-API/blob/master/img/letters-2111533.jpg?raw=true");
-    /* background-attachment: fixed; */
+       ),url("https://github.com/jobal22/Fountain-Pen-API/blob/master/img/letters-2111533_1280%20(1).jpg?raw=true");
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -102,8 +102,9 @@ main {
 }
 
 .penOptions ul a {
-    color: #0e2c3b;
+    color: black;
     font-size: 30px;
+    font-weight: 700;;
 }
 
 .penBrand, .penBrand1 {
