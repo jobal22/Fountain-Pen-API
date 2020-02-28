@@ -71,6 +71,14 @@ main {
     padding-bottom: 180px;
 }
 
+.lbgControl {
+    background-image: url("https://github.com/jobal22/Fountain-Pen-API/blob/master/img/paint-2174687_1280%20(1).png?raw=true");
+    /* background-attachment: fixed; */
+    background-size: 2000px;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
 .header-p {
     font-size: 18px;
     width: 300px;
