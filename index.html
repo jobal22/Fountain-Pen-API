@@ -18,6 +18,7 @@
              $('#js-form').bind('submit', function() {
                  api_key = "zlz871aunsfnzwupy482id1z";
                  terms = $('#js-search-term').val()+"%fountain"+"%pen";
+
                  etsyURL = "https://openapi.etsy.com/v2/listings/active.js?callback=getData&keywords="+
                      terms+"&limit=7&includes=Images:1&api_key="+api_key;
      
@@ -184,10 +185,14 @@
                         <input type="text" name="search-term" id="js-search-term" placeholder="pelikan toledo" required>
                         <button type="submit">Search</button>
                     </form>
+                    <div id="helpful">
+                    <div class="toSea">
+                        <p>scroll down for results</p>
+                    </div>
+                    </div>  
+        
                 </header>
             </div>
-    
-
 
 
         <div class="lbgControl">

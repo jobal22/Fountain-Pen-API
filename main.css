@@ -81,6 +81,10 @@ body {
     background-attachment: fixed;
     background-position: right bottom;
 
+        padding-bottom: 40%;
+        padding-top: 80px;
+
+
 }
 
 /* .header-p {
@@ -210,21 +214,6 @@ button {
     background: rgba(255, 255, 255, 0); 
     border: rgba(255, 255, 255, 0);
     color: rgb(255, 255, 255);
-
-    
-    /* LOOK AT THIS */
-    /* border: 3px solid ghostwhite;
-    padding: 8px 13px;
-    color: ghostwhite;
-    font-size: 45px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    background: rgba(255, 255, 255, 0.25);
-    transition: color 0.25s linear;
-    text-shadow: 0 0 3px #555555;
-    position: relative;
-    left: -3px;
-    border-radius: 0; */
 }
 
 button:focus {
@@ -272,6 +261,20 @@ button:hover{
 
 .hidden {
     display: none;
+}
+
+.toSea {
+    color: white;
+    position: absolute;
+    bottom: 38%;
+    /* left: 40%; */
+    /* position: relative;  
+    text-align: center;
+    vertical-align: bottom; */
+    font-family: 'Cinzel', 'Caveat', 'Libre Baskerville','Raleway' ;
+    text-shadow: 1px 1px 8px rgb(5, 5, 5);
+
+
 }
 
 @media screen and (max-width: 1029px) {
@@ -333,7 +336,10 @@ button:hover{
         width: 190px;
     }
     
-
+    .toSea {
+        left: 30%;
+    }
+    
 
 }
 
@@ -408,7 +414,11 @@ button:hover{
 
       /* .display{
         display: inline-block; */
-        /* width: 600px; */
-      }
+        /* width: 600px; 
+      }*/
 
+
+      .toSea {
+        left: 40%;
+    }
 }
