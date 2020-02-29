@@ -224,6 +224,9 @@ button:hover{
     color: rgb(202, 202, 202);
 }
 
+.jumper {
+    cursor: pointer;
+}
 
 .display {
     border: 1px solid black;

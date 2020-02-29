@@ -9,7 +9,7 @@ const searchEtsyURL = 'https://openapi.etsy.com/v2/users/etsystore/listings/acti
 //oldYTAPIK:
 // AIzaSyCTbjjOtYZ_tmClYaB4BENYdwPELK1LXzc
 
-const youtubeApiKey = 'AIzaSyBlCtnNZ1_B9iy5VePCEJWb_v_EW_N1Ly8';
+const youtubeApiKey = 'AIzaSyBmKz0IYHWnKb5ztZXPEIYHGLlzxQ9ff-0';
 const searchYoutubeURL = 'https://www.googleapis.com/youtube/v3/search';
         
 function myFunction() {
