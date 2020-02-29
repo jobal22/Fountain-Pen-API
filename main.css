@@ -8,66 +8,11 @@ body {
     margin: 0; 
 }
 
-
-/* nav {
-    padding: 1% 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    background-color: lavender;
-} */
-
-
-
-/* .title {
-    font-size: 15px; */
-    /*position: absolute;
-    left: 50%;
-    transform: translate(-50%);*/
-    /* text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
-    padding-top: 10px; */
-/* }
-
-.icon {
-    text-align: right;
-    padding-right: 1px;
-    color: black;
-    width: 100%;
-    font-size: 20px;
-    /*float: right;
-    display: block;}*/
-    /* text-decoration: none;
-    padding-top: 20px; */
-
-/* main {
-    margin-top: 60px; /*temp may change*/
-/* } */ 
-
-/* .header { */
-    /* background: white; */
-    /*width: 100%;*/
-    /* margin-top: 50px;
-    margin-bottom: 20px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-
 .bgControl {
-    background-image: /*linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.4),
-        rgba(255, 255, 255, 0)
-       ),*/url("https://raw.githubusercontent.com/jobal22/Fountain-Pen-API/master/img/fountain-pen-1854169.jpg");
+    background-image: url("https://raw.githubusercontent.com/jobal22/Fountain-Pen-API/master/img/fountain-pen-1854169.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: scroll; */
     background-position: right top;
     padding-top: 230px;
     padding-bottom: 230px;
@@ -82,18 +27,7 @@ body {
     background-position: right bottom;
     padding-bottom: 200px;
     padding-top: 80px;
-
-
 }
-
-/* .header-p {
-    font-size: 18px;
-    width: 300px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-} */
 
 .infoContent1 {
     padding-left: 20px;
@@ -103,11 +37,8 @@ body {
     text-align: center;
 }
 
-
-
 .brand1, .brand2, .shop {
     list-style: none;
-    
 }
 
 .penOptions {
@@ -119,7 +50,6 @@ body {
 }
 
 .penOptions ul a {
-    /* color: black; */
     font-size: 80px;
     font-weight: 700;
     color: rgb(255, 255, 255);
@@ -139,7 +69,6 @@ body {
 
 .penShop {
     padding-left: 23px;
-    /* stretch out this!!!! */
     text-decoration: none;
 }
 
@@ -149,12 +78,7 @@ body {
     padding-top: 125px;
     padding-bottom: 155px;
     display: inline-block;
-    width: 70%; /*centered*/
-    /* display: flex; 
-    justify-content: center; */
-    /* position: absolute; */
-    /* left: 50%; */
-    /* transform: translate(13%); */
+    width: 70%; 
 }
 
 #js-search-term {
@@ -164,9 +88,7 @@ body {
     padding-bottom: 0;
     border-radius: 4px;
     font-size: 34px;
-    /* width: 190px; */
 }
-
 
 input[type=text] {
     background-color:  rgba(255, 255, 255, 0);
@@ -211,21 +133,6 @@ input[type=text] {
     border: white;
   }
 
-/* button {
-    padding: 0;
-    margin: 0;
-    border-radius: 4px;
-    font-size: 44px;
-    text-shadow: 1px 1px 8px rgb(5, 5, 5);
-    text-transform: uppercase;
-    font-family: 'Cinzel', 'Caveat', 'Libre Baskerville','Raleway' ;
-    letter-spacing: 10px;
-    width: 225px;
-    background: rgba(255, 255, 255, 0); 
-    border: rgba(255, 255, 255, 0);
-    color: rgb(255, 255, 255);
-} */
-
 button:focus {
     outline:none;
 }
@@ -243,7 +150,6 @@ button:hover{
     padding: 20px;
     width: 400px;
     background-color: white;
-    /* width: 400px; */
 }
 
 .display h3 {
@@ -265,7 +171,7 @@ button:hover{
 
 .display p {
     text-align: right; 
-     padding-right: 8%; 
+    padding-right: 8%; 
 }
 
 .display .etsy-logo {
@@ -274,28 +180,14 @@ button:hover{
    left: 35%;
 }
 
-.display .youtube-logo {
-    width: 120px;
-   position: relative;
-   left: 35%;
-}
-
 .error-message {
     color: red;
-}
-
-.hidden {
-    display: none;
 }
 
 .toSea {
     color: white;
     position: absolute;
     bottom: 38%;
-    /* left: 40%; */
-    /* position: relative;  
-    text-align: center;
-    vertical-align: bottom; */
     font-family: 'Cinzel', 'Caveat', 'Libre Baskerville','Raleway' ;
     text-shadow: 1px 1px 8px rgb(5, 5, 5);
 
@@ -305,57 +197,8 @@ button:hover{
 @media screen and (max-width: 1029px) {
 
     section {
-        /*this margin centered the section*/
         margin: 0 auto;
     }
-
-    /* .hamburger {
-        position: fixed;
-        left: 96%;
-    }
-
-    .topnav ul{ */
-        /* display: flex; */
-        /* text-align: center;
-        list-style: none;
-        margin:0;
-        padding-bottom: 5px; */
-        /* padding: 10px; */
-      /* }
-
-      .topnav ul li {
-        float:none;
-        display: inline-block; 
-        list-style: none;
-      }
-
-      .topnav ul  a {
-        margin: 0 20px; 
-        text-decoration: none;
-        color: black;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 10px;
-      } */
-
-      /* .icon { */
-        /*text-align: right;
-        padding-right: 13px;
-        color: white;
-        width: 100%;
-        font-size: 40px;*/
-        /* float: right;
-        display: block;
-        } */
-
-      /* .menu {display: none;} */
-
-      /* .infoContent1 {
-        padding: 20px;
-        padding-top: 40px;
-        text-align: center;
-    } */
 
     #js-search-term {
         width: 190px;
@@ -376,87 +219,25 @@ button:hover{
         color: rgb(255, 255, 255);
     }
     
-    
     .toSea {
         left: 30%;
     }
-    
-
 }
 
 @media screen and (min-width: 1030px) {
-    .container {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .title {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    .nav-container {
-      display: flex;
-    }
-
-    .icon {display: none;}
-
-    .topnav {
-        max-width: 1170px;
-        margin: auto;
-        position: relative;
-      }    
-
-      .topnav ul{
-        text-align: center;
-        margin:0;
-        padding-top: 65px;
-      }
-    
-      .topnav ul li {
-        float:none;
-        display: inline-block; 
-        list-style: none;
-      }
-
-      .topnav ul  a {
-        margin: 0 20px; 
-        text-decoration: none;
-        color: black;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        font-weight: bold;
-      }
-
       .infoContent {
-        /*padding: 20px;*/
         padding-top: 50px;
         text-align: center;
-      }
-
-      .header-p {
-        width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 20px;
       }
 
       #js-search-term {
         width: 390px;
     }
 
-
-      /*The .box centered*/
       .box {
           display: flex;
           justify-content: space-evenly;
       }
-
-      /* .display{
-        display: inline-block; */
-        /* width: 600px; 
-      }*/
 
       button {
         padding: 0;
@@ -473,7 +254,6 @@ button:hover{
         color: rgb(255, 255, 255);
     }
     
-
       .toSea {
         left: 40%;
     }
