@@ -95,43 +95,53 @@ body {
     padding-top: 20px;
 } */
 
-/*.infoContent {*/
-    /*padding: 20px;*/
-    /*padding-top: 40px;
+.infoContent1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 0;
     text-align: center;
-}*/
+}
 
 
 
-/* .brand1, .brand2, .shop {
+.brand1, .brand2, .shop {
     list-style: none;
     
-} */
+}
 
-/* .penOptions {
+.penOptions {
     color: white;
-} */
+}
 
-/* .penOptions ul li {
+.penOptions ul li {
     display: inline-block;
 }
 
 .penOptions ul a {
-    color: black;
-    font-size: 30px;
+    /* color: black; */
+    font-size: 80px;
     font-weight: 700;
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+    font-weight: bold;
+    font-family: 'Cinzel', 'Caveat', 'Libre Baskerville','Raleway' ;
+    text-shadow: 1px 1px 8px rgb(5, 5, 5);
+    border: white;
+    font-size: 20px;
+
 }
 
 .penBrand, .penBrand1 {
-    padding-left: 10px;
+    padding-left: 20px;
     text-decoration: none;
 }
 
 .penShop {
-    padding-left: 13px; */
-    /*stretch out this!!!!*/
-    /* text-decoration: none;
-} */
+    padding-left: 23px;
+    /* stretch out this!!!! */
+    text-decoration: none;
+}
 
 
 #js-form {
@@ -233,7 +243,7 @@ button:hover{
     padding: 20px;
     width: 400px;
     background-color: white;
-    width: 400px;
+    /* width: 400px; */
 }
 
 .display h3 {
@@ -242,7 +252,7 @@ button:hover{
 
 .display h4 {
     width: 150px;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .display h4, img {
@@ -254,8 +264,8 @@ button:hover{
 }
 
 .display p {
-    text-align: right;
-    padding-right: 8%;
+    text-align: right; 
+     padding-right: 8%; 
 }
 
 .display .etsy-logo {
@@ -341,9 +351,9 @@ button:hover{
 
       /* .menu {display: none;} */
 
-      /* .infoContent { */
-        /*padding: 20px;*/
-        /* padding-top: 40px;
+      /* .infoContent1 {
+        padding: 20px;
+        padding-top: 40px;
         text-align: center;
     } */
 
