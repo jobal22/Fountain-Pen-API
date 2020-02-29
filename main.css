@@ -98,9 +98,9 @@ input[type=text] {
   }
 
   input[type=text], textarea {
-      color: white;
-      text-shadow: 1px 1px 8px rgb(5, 5, 5);
-      text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 8px rgb(5, 5, 5);
+    text-transform: uppercase;
   }
 
   input:focus {
