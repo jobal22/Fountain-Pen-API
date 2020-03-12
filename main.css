@@ -10,7 +10,7 @@ body {
 
 .bgControl {
     background-image: url("https://raw.githubusercontent.com/jobal22/Fountain-Pen-API/master/img/fountain-pen-1854169.jpg");
-    background-attachment: fixed;
+    background-attachment: absolute;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right top;
@@ -20,10 +20,8 @@ body {
 
 .lbgControl {
     background-image: url("https://github.com/jobal22/Fountain-Pen-API/blob/master/img/sea-2927115_1920%20(1).jpeg?raw=true");
-    background-attachment: fixed;
-    background-size: fill;
+    background-size: 2500px 3000px;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: right bottom;
     padding-bottom: 200px;
     padding-top: 80px;
