@@ -186,7 +186,7 @@ button:hover{
 
 .toSea {
     color: white;
-    position: absolute;
+    position: relative;
     bottom: 38%;
     font-family: 'Cinzel', 'Caveat', 'Libre Baskerville','Raleway' ;
     text-shadow: 1px 1px 8px rgb(5, 5, 5);
@@ -255,6 +255,6 @@ button:hover{
     }
     
       .toSea {
-        left: 40%;
+        /* left: 40%; */
     }
 }
