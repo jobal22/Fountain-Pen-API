@@ -70,9 +70,12 @@
             <main role="main" class="siteContent">
                 <div class="bgControl">
                 <header class="infoContent">
+                    <div class="instructions">
+                        <p>Enter a fountain pen brand and click 'search'. Then, scroll down to see Etsy results for the brand and Youtube reviews for the brand.</p>
+                    </div>
                     <form id="js-form">
                         <input type="text" name="search-term" id="js-search-term" placeholder="fountain pens" required>
-                        <button type="submit"  >Search</button>
+                        <button type="submit">Search</button>
                     </form>
                     <div id="helpful">
                         <div class="toSea">
@@ -89,6 +92,14 @@
                 <section class="etsyResults display" id="js-etsyResults">
                     <img class="etsy-logo" src="https://github.com/jobal22/Fountain-Pen-API/blob/master/img/Etsy_logo.png?raw=true" alt="Etsy logo">
                     <div id="etsy-images"></div>
+                </section>
+                <section class="youtubeResults display" id="js-youtubeResults">
+                    <img class="youtube-logo" src="https://github.com/jobal22/Fountain-Pen-API/blob/master/img/youtube-logo.png?raw=true" alt="Etsy logo">
+
+                    <p id="js-error-message" class="error-message"></p>
+
+                    <ul id="youtubeResults-list" class="list">
+                    </ul>
                 </section>
             </div>
             <div class="infoContent1">
