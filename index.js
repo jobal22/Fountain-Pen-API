@@ -25,14 +25,14 @@ function formatQueryParams(params) {
 }
 
 function displayResults(responseJson) {
-  console.log(responseJson);
+  console.log('look', responseJson);
   $('#youtubeResults-list').empty();
   for (let i = 0; i < responseJson.items.length; i++){
     $('#youtubeResults-list').append(
-      `<li><h3>${responseJson.items[i].snippet.title}</h3>
-      <p>${responseJson.items[i].snippet.description}</p>
+      `<h4>${responseJson.items[i].snippet.title}</h4>
+      <a href='https://www.youtube.com/watch?v=${responseJson.items[i].id.videoId}'>
       <img src='${responseJson.items[i].snippet.thumbnails.default.url}'>
-      </li>`
+      </a>`
     )};
   //display the results section  
   //$('#youtubeResults-list').removeClass('hidden');
