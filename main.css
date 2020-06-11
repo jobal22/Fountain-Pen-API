@@ -32,6 +32,8 @@ body {
     padding-right: 50px;
     color: white;
     font-size: 20px;
+    background: rgba(255, 255, 255, 0); 
+    border: rgba(255, 255, 255, 0);
 }
 
 .infoContent1 {
@@ -233,6 +235,16 @@ button:hover{
     .toSea {
         left: 30%;
     }
+
+    .instructions {
+        padding-left: 50px;
+        padding-right: 50px;
+        color: white;
+        font-size: 20px;
+        background: rgba(255, 255, 255, 0); 
+        border: rgba(255, 255, 255, 0);
+    }
+    
 }
 
 @media screen and (min-width: 1030px) {
