@@ -20,7 +20,7 @@
                  terms = $('#js-search-term').val()+"%fountain"+"%pen";
 
                  etsyURL = "https://openapi.etsy.com/v2/listings/active.js?callback=getData&keywords="+
-                     terms+"&limit=8&includes=Images:1&api_key="+api_key;
+                     terms+"&limit=10&includes=Images:1&api_key="+api_key;
      
                  $('#etsy-images').empty();
                  $('<p></p>').text('Searching for '+terms).appendTo('#etsy-images');

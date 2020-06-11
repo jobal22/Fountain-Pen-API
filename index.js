@@ -31,7 +31,7 @@ function displayResults(responseJson) {
     $('#youtubeResults-list').append(
       `<h4>${responseJson.items[i].snippet.title}</h4>
       <a href='https://www.youtube.com/watch?v=${responseJson.items[i].id.videoId}'>
-      <img src='${responseJson.items[i].snippet.thumbnails.default.url}'>
+      <img src='${responseJson.items[i].snippet.thumbnails.medium.url}'>
       </a>`
     )};
   //display the results section  
